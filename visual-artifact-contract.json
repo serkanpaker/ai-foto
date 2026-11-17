@@ -1,0 +1,19 @@
+{
+  "artifact": "AI Foto macOS desktop app",
+  "platform": "macOS Apple Silicon, minimum macOS 14",
+  "framework": "PySide6",
+  "entrypoint": "main.py",
+  "primary_tasks": [
+    "Import images from the File menu, button, or drag and drop",
+    "View per-image scores from five real detector backends",
+    "Review reliability weights and the weighted AI score",
+    "Export images, score tables, and weighted scores to Word"
+  ],
+  "tokens_file": "tokens.json",
+  "screenshots": [
+    {"path": "build/ui-empty.png", "state": "image selected, no scores yet", "viewport": "1240x820", "renderer": "Qt offscreen"},
+    {"path": "build/ui-results.png", "state": "real five-backend inference results", "viewport": "1240x820", "renderer": "Qt offscreen"}
+  ],
+  "models": ["univfd", "hf", "nonescape-mini", "hybrid", "hybrid-plus"],
+  "score_weights": {"univfd_balanced_accuracy": 0.690, "hf_balanced_accuracy": 0.580, "nonescape_mini_balanced_accuracy": 0.772}
+}

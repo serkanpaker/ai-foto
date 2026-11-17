@@ -1,0 +1,19 @@
+# Python and PyInstaller build artifacts
+.venv/
+__pycache__/
+*.py[cod]
+build/
+dist/
+backups/
+*.log
+*.dmg
+*.app/
+*.safetensors
+
+# Desktop OS files
+.DS_Store
+Thumbs.db
+
+# Local model caches
+.cache/
+/evaluation_samples/
